@@ -1,2 +1,2 @@
-# CompetetiveContest
+# CompetitiveContest
 This is practice contest
