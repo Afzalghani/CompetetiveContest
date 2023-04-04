@@ -11,39 +11,35 @@ public class LexicallySmaller {
             int n=input.nextInt();
            String str=input.next();
            char a=str.charAt(0);
-           char prev=a;
            int choose=-1;
-           int min=Integer.MAX_VALUE;
-           char latest='a';
+           int min=27;
+
            for(int i=1;i<str.length();i++)
            {
-               if(a>= str.charAt(i) && prev!=str.charAt(i)){
+              if(min>=(str.charAt(i)-'a')){
+                  min=str.charAt(i)-'a';
+                  choose=i;
 
-                   if(latest>=str.charAt(i)){
-                       latest=str.charAt(i);
-                       choose=i;
-                   }
-               }
-               prev=str.charAt(i);
+              }
            }
 
-           if(choose==-1)
-           {
+
+
+           if(str.charAt(0)-'a'<min){
                System.out.println(str);
            }
-           else{
-               String ans=str.charAt(choose)+"";
+           else {
+               System.out.print(str.charAt(choose));
                for(int i=0;i<str.length();i++){
-
-                   if(i==choose)
-                       continue;
-                   else
-                     ans+=str.charAt(i);
-
-
+                   if(i!=choose){
+                       System.out.print(str.charAt(i));
+                   }
                }
-               System.out.println(ans);
+               System.out.println();
            }
+
+
+
 
 
 
