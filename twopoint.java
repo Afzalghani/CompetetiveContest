@@ -1,4 +1,6 @@
 package CompetetiveContest;
+
+
 import java.util.Scanner;
 
 public class twopoint {
@@ -10,7 +12,7 @@ public class twopoint {
             int b = sc.nextInt();
             int n = 2;
             System.out.println(n);
-            System.out.println((a+ " " + b); // Ian's initial location
+            System.out.println((a+ " " + b)); // Ian's initial location
 
                 System.out.println(a + " " + b); // Ian jumps directly to Mary's location
 
